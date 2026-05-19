@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/15 05:19:41 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/05/15 15:01:28 by uvadakku         ###   ########.fr       */
+/*   Created: 2026/05/19 13:44:24 by uvadakku          #+#    #+#             */
+/*   Updated: 2026/05/19 14:45:34 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HARL_HPP
+#define HARL_HPP
 
-int main()
-{
-	randomChump("FOO");
-	Zombie *heapbar = newZombie("Bar");
-	heapbar->announce();
-	delete heapbar;
+#include <iostream>
+#include <string>
 
-	return (0);
-}
+class Harl {
+	private:
+		void debug( void );
+		void info( void );
+		void warning( void );
+		void error( void );
+	
+	public:
+		void    complain( std::string level );
+};
+
+#endif
