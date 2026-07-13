@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 12:31:09 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/08 11:33:29 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/13 16:06:31 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Zombie::Zombie(const std::string &zombieName) : name (zombieName){
 }
 
 Zombie::~Zombie() {
-	std::cout << name << " is destroyed" << std::endl;
+	std::cout << name << "is destroyed" << std::endl;
 }
 
 void Zombie::setName(std::string newName) { 
